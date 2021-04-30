@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--<> 태그:시작태그<>, 종료태그</>-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>타이틀</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    </head>
+    <!-- style 속성: css를 적용할 때 사용 
+        속성값으로 css 문법을 작성-->
+    <body style="background-color: darkorange;">
+        <!-- 화면에 보여줄 내용 작성 -->
+        <!-- 내용을 추가하고 저장 -->
+        <h1 style="background-color:green ;">제목</h1>
+        <!-- background color : 배경색 -->
+        <p>해당 내용을 작성합니다.</p>
+        <h2 style="background-color: lightslategrey;">제목1</h2>
+        <h3 style="color: olive;">제목2</h3>
+        <!-- color : 글자색 -->
+        <h4 style="font-family: 'Times New Roman', Times, serif;">제목3</h4>
+        <!-- "font : 글자체 바꾸기" -->
+        <h5>제목4</h5>
+        <h6>제목5</h6>
+        <!-- 링크태그 -->
+       <!--a href =>속성(attribute)을 사용 
+        속성값에 주소 값을 작성-->
+        <a href="https://www.upbit.com/home">링크내용</a>
+
+        <!-- 구글폰트 적용 -->
+        <h1 style="font-family: 'Nanum Brush Script', cursive";>
+        구글폰트적용</h1>
+        
+        <!-- 글자 편집을 위한 다양한 태그 -->
+        <b>이건 b다</b>
+        <strong>어떻게 되는지</strong>
+        <i>확인을</i>
+        <small>하는</small>
+        <sup>것입니다</sup>
+
+        <!-- 색 표현 -->
+        <h2 style="background-color: red;">빨간색</h2>
+        <h2 style="background-color: rgb(255,0,0);">빨간색</h2>
+        <!-- 16진수
+        10진수 :0~9 
+        2진수 :0(false),1(true)
+        16진수 0~9, A,B,C,D,E,F  -->
+        <h2 style="background-color: #FF0000;">빨간색</h2>
+        <!-- FF=>R 00=>G 00=>B 
+        00~FF(255)-->
+        <h2 style="background-color: rgba(255, 0 ,0 ,0.4);">빨간색</h2>
+        <!-- 0.4 부분은 투명도 지정 -->
+
+        <!-- 이미지 삽입(종료태그가 없다) 
+            src  속성값 : 그림경로-->
+        <img src="/images/스크린샷(1).png"style="width:300px; height=400px;">
+            <!--img의 width,height 속성  -->
+        <img src="/images/스크린샷(1).pn"width="300" height="150"> 
+           <!--alt 속성의 역활  -->
+        <img src="/images/스크린샷(1).pn"width="300" height="150" alt="떡상하고싶다">
+
+           <!--이미지를 링크로 활용하기  -->
+        <a href="https://google.co.kr">
+            <img src="/images/google.png" width="100" height="50">
+        </a>
+        <!--target 속성에 _blank : 새창  -->
+        <a href="https://google.co.kr" target="_blank">
+            <img src="/images/google.png" width="100" height="50">
+        </a>
+
+    </body>
+</html>
+
