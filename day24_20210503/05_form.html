@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 태그 -->
+    <form>
+        <!-- name 속성값에 입력한 데이터가 담겨서 서버로 전달됨.
+            입력창에 날씨라고 입력했다면 'name1=날씨' 형태로 백앤드로 전달됨 -->
+            <!-- placeholder: 흐릿하게 안내문 같은 역활을함 -->
+        아이디: <input type="text" id="id1" name="name1"placeholder="아이디를입력하세요"><br><!-- br:줄을 바꿔주는 태그 -->
+        <!-- label for :항목을 클릭하면 커서가 활성화가됨  -->
+        <label for="id2">비밀번호:</label>
+        <input type="text"id="id2" name="name2">
+        지역:
+        <select name="city"><!-- 옵션에 적어둔 것을 선택할 수 있게하는것 -->
+            <option value="incheon"> 인천</option>
+            <option value="seoul">서울</option>
+            <option value="jeju">제주</option>
+        </select>
+        이메일:
+        <input type="text" name="emailid">@
+        <!-- 만약 지메일을 선택한다면 백앤드로 전달될 때  
+         option 태그의 value 속성값이 담겨서 감 domain=gmail.com -->
+        <select name="domain">
+            <option value=""selected>선택하세요</option><!-- selected:지정한 항목이 보여지게된다 -->
+            <option value="naver.com"> 네이버</option> 
+            <option value="hanmail.net">다음</option>
+            <option value="gmail.com">지메일</option>
+        </select><br>
+        자기소개:<textarea name="intro"rows="5"cols="15"></textarea><br><!-- textarea: 긴글을 쓸 수 있는 태그 -->
+        비밀번호:<input type="password"name='password'><br><!-- 비밀번호가 안보이게 하는것 -->
+        성별:<input type="radio" id="male" name="gender" value="male"><!-- raiod 타입을 쓸때는 name 값을 똑같이한다 -->
+            <label for="male">남</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for ="female">여</label><br>
+            <!-- UI(User Intergace):디자인
+                UX(User eXperience):사용성 -->
+        사용경험 프로그래밍 언어:
+        <input type="checkbox"name="lang"value="java">자바
+        <input type="checkbox"name="lang"value="orcle">오라클
+        <input type="checkbox"name="lang"value="html">html
+        <input type="checkbox"name="lang"value="js">javascript
+        <br>
+        <!-- radio,checkbox 차이점은 다중선택이 되느냐 안되느냐 -->
+        생일
+        <input type="date" name="birth"><br>
+        수량<!-- step:변화 하는 값 -->
+        <input type="number"name="quan"min="1"max="10"step="2">
+
+    </form>
+   
+</body>
+</html>
