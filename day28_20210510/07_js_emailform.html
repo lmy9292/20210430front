@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test1(){
+            console.log('test1함수 호출');
+            var ele = document.getElementById('id1');
+            console.log(ele.value);
+            document.getElementById('email2').value=ele.value;
+        }
+    </script>
+</head>
+<body>
+    <input id=email1 type="text">@<input id=email2 type="text">
+    <select id="id1" onchange="test1()">
+        <option value="naver.com">naver.com</option>
+        <option value="gmail.com">gmail.com</option>
+        <option value="hamail.net">hamail.net</option>
+        <option value="">직접입력</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 테이블</title>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: right;
+        }
+        td{
+            width: 30px;
+        }
+        tr:nth-child(even){
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        function number(){
+            var table="<table>";
+            for(var i=2; i<=9; i++){
+                    table+='<tr>';
+                    table+="<td>"+i+"단</td>";
+                for(var j=1; j<=9; j++){
+                    table+="<td>"+(i*j)+"</td>";
+                }
+                table +="</tr>";
+            }
+               table+='</table>';
+               document.getElementById('result').innerHTML=table;
+         }     
+    </script>     
+</head>
+<body>
+    <button onclick="number()">구구단출력</button>
+    <div id="result"></div>
+</body>
+</html>                
+            
+    
+                
+    
+        
+    
+            
+        
