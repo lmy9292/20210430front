@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- js 폴더 만들어서 joinform.js 파일만들기 -->
+    <script src="../js/joinform.js"></script>
+     <!-- css 파일 import -->
+    <link rel="stylesheet" href="../css/joinform.css">
+</head>
+<body>
+    <h2>회원가입</h2>
+    아이디:<input type="text" id="id" onblur="idcheck()" placeholder= "아이디를 입력하세요."> 
+    <span id="idcheck"></span><br>
+    비밀번호:<input type="password" id="pw" onblur="pwdcheck()" placeholder="비밀번호를 입력하세요.">
+    <span id="pw-result"></span><br>
+    비밀번호 확인:<input type="password" id="pw-confirm" onblur="pwdconfirm()" placeholder="비밀번호를 한번 더 입력하세요.">
+    <span id="pw-confirm-result"></span><br>
+    이름:<input type="text" id="name"onblur="namecheck()"placeholder="이름입력">
+    <span id="name-result"></span><br>
+    이메일:<input type="text"id="email">@<input id="email2" type="text">
+            <select id="email_drop" onchange="email_list()">
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="hamail.net">hamail.net</option>
+                <option value="">직접입력</option>
+            </select><br>
+    전화번호:<input type="text" id="phone" onblur="phonecheck()">
+    <span id="phone_number"></span><br>
+    
+    주소:<input type="text" id="sample4_postcode" placeholder="우편번호">
+        <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+        <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+        <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+        <span id="guide" style="color:#999;display:none"></span>
+        <input type="text" id="sample4_detailAddress" placeholder="상세주소">
+        <input type="text" id="sample4_extraAddress" placeholder="참고항목">
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+   
+</script>
+</body>
+</html>
